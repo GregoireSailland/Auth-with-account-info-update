@@ -36,7 +36,10 @@ class AccountController extends Controller  //old name : HomeController
         //return view('logged-in');
         $user = auth()->user();
         //dd($user);
-        return view('auth.account', compact('user'));
+        //dd(compact('user'));
+        return view('auth.account', 
+            compact('user')
+        );
         
     }
 
